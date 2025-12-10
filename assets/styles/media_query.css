@@ -1,0 +1,302 @@
+:root{
+    --color1: rgb(210,92,46)
+}
+@media (max-width:1024px){
+    #header-contact{
+      display: none;
+    }
+    #logo{
+        width: 100px;
+    }
+    h1{
+        width: 100%;
+    }
+    .menu-burger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:40px;
+        width: 85px;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+       
+       
+    }
+    .menu-burger span{
+        width: 100%;
+        background-color: var(--color1);
+        height: 10px;
+        
+        border: 2px solid black;
+        padding: 5px 0;
+        border-radius: 10px;
+        margin: 2px 0;
+    }
+    .menu_mobile{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: green; */
+    }
+    .link a{
+        color: white;
+   
+    }
+    .link{
+       
+        background-color: var(--color1);
+        padding: 10px;
+        font-size: 2.2rem;
+        width: 175px;
+        /* border: 2px solid black; */
+        text-align: center;
+        color: white;
+        margin: 35px 0;
+        padding: 10px 35px;
+        
+        border-radius: 15px;
+    }
+    .contact{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        
+    }
+    .contact p{
+        margin: 10px 0;
+    }
+
+    .social_media{
+        margin: 40px  auto;
+        display: flex;
+        justify-content: space-around;
+        width: 80% ;
+    }
+
+    #offert{
+        display: flex;
+        flex-direction: column;
+    }
+    #description{
+        padding: 40px 100px;
+    }
+    .titre_zone{
+        font-size: 3.2rem;
+    }
+
+    #type-services{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 80%;
+        gap: 15px;
+    }
+
+    #notre-entreprise{
+        width: 80%;
+    }
+        
+
+    #images_galerie{
+       display: flex;
+       flex-direction: column;
+    }
+    
+    #zone_icone{
+        display: none;
+    }
+    #paragraph{
+        width: 100%;
+    }
+
+
+    
+}
+
+
+
+
+
+
+@media (max-width:880px){
+    h1{
+        font-size: 2.2rem;
+    }
+
+    #grand-icones article{
+        width: 60%;
+    }
+    .icones-grand{
+        width: 100px;
+        height: 100px;
+
+    }
+    .titre_zone{
+        font-size: 2.2rem;
+        letter-spacing: 0;
+    }
+
+    #type-services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #description-text p {
+        font-size: 1.6rem;
+    }
+    #block_images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+    #icone_et_texte{
+        display: flex;
+        flex-direction: row;
+    }
+    #info_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    hr{
+        display: none;
+    }
+     /* Le slider horizontal */
+    #images_galerie{
+        display: flex !important;
+        flex-direction: row !important;
+
+        overflow-x: auto !important;   /* on garde la barre horizontale */
+        overflow-y: hidden !important;
+
+        
+        padding: 20px 0;
+        gap: 20px;
+
+        scroll-snap-type: x mandatory;  
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* On NE supprime PAS la scrollbar ici */
+
+    /* Style plus propre de la barre de défilement */
+    #images_galerie::-webkit-scrollbar {
+        height: 8px;
+    }
+    #images_galerie::-webkit-scrollbar-track {
+        background: #ddd;
+        border-radius: 10px;
+    }
+    #images_galerie::-webkit-scrollbar-thumb {
+        background: #999;
+        border-radius: 10px;
+    }
+
+    /* Les images centrées */
+    #images_galerie .image-galerie{
+        flex: 0 0 85%;
+        max-width: 85%;
+        height: 250px;
+
+        object-fit: cover;
+        border-radius: 14px;
+
+        scroll-snap-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    /* Annulation de la grille desktop */
+    #images_galerie img{
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
+    
+
+}
+
+
+
+
+
+
+
+@media (max-width: 600px){
+    #description{
+        width: 100%;
+        padding: 0;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+   
+    }
+    #description p{
+        font-size: 1.6rem;
+    }
+    
+    #offert div {
+        display: flex;
+        align-items: center;
+    }
+    #offert div  p{
+        font-size: 1.8rem;
+
+    }
+    h1{
+        font-size: 1.8rem;
+        width: 80%;
+    }
+    #grand-icones article{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .icones-grand{
+        width: 70px;
+        height: 70px;
+    }
+
+    .description_intervention{
+        font-size: 1.4rem;
+    }
+    #description-text{
+        font-size: 1.4rem;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #icone_et_texte{
+        margin: 0 auto;
+        width: 80% ;
+        display: flex;
+        flex-direction: column;
+    }
+    #block_images{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }#info_footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .social_media img{
+        width: 50px;
+    }
+
+}
