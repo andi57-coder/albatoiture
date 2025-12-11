@@ -368,6 +368,11 @@
     .menu-burger.open span:nth-child(3) {
       transform: translateY(-21px) rotate(310deg);
     }
+       .titre_zone{
+        font-size: 1.8rem;
+        letter-spacing: 0;
+    }
+    
     
     }
     
