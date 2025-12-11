@@ -89,6 +89,9 @@ a{
     /* Transition hover */
     transition: transform .25s ease, background-color .25s ease, box-shadow .25s ease;
 }
+#navigation-link nav ul li a {
+    color: white;
+}
 
 #navigation-link nav ul li:nth-child(1){
     animation-delay: 0.1s;
@@ -594,4 +597,5 @@ footer{
 }
 
 */
+
 
